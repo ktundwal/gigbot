@@ -1,19 +1,19 @@
-﻿using IntermediatorBotSample.CommandHandling;
-using IntermediatorBotSample.ConversationHistory;
-using IntermediatorBotSample.MessageRouting;
-using Microsoft.Bot.Builder;
+﻿using Microsoft.Bot.Builder;
 using Microsoft.Bot.Connector.Authentication;
 using Microsoft.Bot.Schema;
 using Microsoft.Extensions.Configuration;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Microsoft.EIBot.CommandHandling;
+using Microsoft.EIBot.ConversationHistory;
+using Microsoft.EIBot.MessageRouting;
 using Underscore.Bot.MessageRouting;
 using Underscore.Bot.MessageRouting.DataStore;
 using Underscore.Bot.MessageRouting.DataStore.Azure;
 using Underscore.Bot.MessageRouting.DataStore.Local;
 using Underscore.Bot.MessageRouting.Results;
 
-namespace IntermediatorBotSample.Middleware
+namespace Microsoft.EIBot.Middleware
 {
     public class HandoffMiddleware : IMiddleware
     {

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Underscore.Bot.MessageRouting.DataStore;
 using Underscore.Bot.MessageRouting.DataStore.Azure;
 
-namespace IntermediatorBotSample.ConversationHistory
+namespace Microsoft.EIBot.ConversationHistory
 {
     public class MessageLogs
     {

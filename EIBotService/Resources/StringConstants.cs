@@ -1,4 +1,4 @@
-﻿namespace IntermediatorBotSample.Resources
+﻿namespace Microsoft.EIBot.Resources
 {
     public class StringConstants
     {

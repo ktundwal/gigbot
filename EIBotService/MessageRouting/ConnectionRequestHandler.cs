@@ -1,13 +1,13 @@
-﻿using IntermediatorBotSample.Resources;
-using Microsoft.Bot.Schema;
+﻿using Microsoft.Bot.Schema;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Microsoft.EIBot.Resources;
 using Underscore.Bot.MessageRouting;
 using Underscore.Bot.MessageRouting.DataStore;
 using Underscore.Bot.MessageRouting.Models;
 using Underscore.Bot.MessageRouting.Results;
 
-namespace IntermediatorBotSample.MessageRouting
+namespace Microsoft.EIBot.MessageRouting
 {
     /// <summary>
     /// Contains utility methods for accepting and rejecting connection requests.

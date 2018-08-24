@@ -1,18 +1,17 @@
-﻿using IntermediatorBotSample.MessageRouting;
-using IntermediatorBotSample.Resources;
-using Microsoft.Bot.Builder;
-using Microsoft.Bot.Connector;
+﻿using Microsoft.Bot.Builder;
 using Microsoft.Bot.Schema;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Microsoft.EIBot.MessageRouting;
+using Microsoft.EIBot.Resources;
 using Underscore.Bot.MessageRouting;
 using Underscore.Bot.MessageRouting.DataStore;
 using Underscore.Bot.MessageRouting.Models;
 using Underscore.Bot.MessageRouting.Results;
 
-namespace IntermediatorBotSample.CommandHandling
+namespace Microsoft.EIBot.CommandHandling
 {
     /// <summary>
     /// Handler for bot commands related to message routing.

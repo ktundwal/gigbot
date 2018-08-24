@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Configuration;
 
-namespace IntermediatorBotSample.Pages
+namespace Microsoft.EIBot.Pages
 {
     public class IndexModel : PageModel
     {

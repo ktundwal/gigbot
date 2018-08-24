@@ -1,12 +1,12 @@
-﻿using IntermediatorBotSample.Resources;
-using Microsoft.Bot.Schema;
+﻿using Microsoft.Bot.Schema;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
+using Microsoft.EIBot.Resources;
 using Underscore.Bot.MessageRouting.DataStore;
 using Underscore.Bot.MessageRouting.Models;
 
-namespace IntermediatorBotSample.CommandHandling
+namespace Microsoft.EIBot.CommandHandling
 {
     /// <summary>
     /// An utility class for creating command related cards.

@@ -1,6 +1,4 @@
-﻿using IntermediatorBotSample.Bot;
-using IntermediatorBotSample.Middleware;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Bot.Builder.BotFramework;
 using Microsoft.Bot.Builder.Core.Extensions;
@@ -9,8 +7,10 @@ using Microsoft.Bot.Builder.TraceExtensions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
+using Microsoft.EIBot.Bot;
+using Microsoft.EIBot.Middleware;
 
-namespace IntermediatorBotSample
+namespace Microsoft.EIBot
 {
     public class Startup
     {
@@ -24,7 +24,8 @@ namespace IntermediatorBotSample
             var builder = new ConfigurationBuilder()
                 .SetBasePath(env.ContentRootPath)
                 .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
-                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
+                //.AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
+                .AddJsonFile($"appsettings.json", optional: true)
                 .AddEnvironmentVariables();
 
             Configuration = builder.Build();
@@ -39,7 +40,7 @@ namespace IntermediatorBotSample
             services.AddMvc().AddControllersAsServices();
             services.AddSingleton(_ => Configuration);
 
-            services.AddBot<IntermediatorBot>(options =>
+            services.AddBot<Bot.EIBot>(options =>
             {
                 options.CredentialProvider = new ConfigurationCredentialProvider(Configuration);
 

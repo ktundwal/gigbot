@@ -1,7 +1,7 @@
 ﻿using Microsoft.WindowsAzure.Storage.Table;
 using System;
 
-namespace IntermediatorBotSample.ConversationHistory
+namespace Microsoft.EIBot.ConversationHistory
 {
     public class MessageLogEntity : TableEntity
     {

@@ -4,7 +4,7 @@ using System.Runtime.CompilerServices;
 using Underscore.Bot.MessageRouting;
 using Underscore.Bot.MessageRouting.Logging;
 
-namespace IntermediatorBotSample.Logging
+namespace Microsoft.EIBot.Logging
 {
     /// <summary>
     /// Logger that outputs all log messages to all aggregation channel conversations.
